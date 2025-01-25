@@ -69,13 +69,12 @@ function todoFormatting(obj, i){
 }
 
 function app(){
-  addToDo("Second Todo", "This is the second todo", true)
-  addToDo("Third Todo", "This is the third todo")
   console.log('Welcome to the Todo Application');
   console.log('================================');
-
+  
   // You will need to call your methods below this comment to edit the todos array
-  // let selection = prompt.keyInSelect(todos.map((obj, i) => todoFormatting(obj, i)), 'Which todo would you like to edit?')
+  addToDo("Second Todo", "This is the second todo", true)
+  addToDo("Third Todo", "This is the third todo")
   editToDo(todos)
   removeTodo(todos)
   // You will need to call your methods above this comment to edit the todos array
