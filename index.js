@@ -28,7 +28,7 @@ function editToDo(arr) {
   let selection = prompt.keyInSelect(arr.map((obj, i) => todoFormatting(obj, i)), 'Which todo would you like to edit?')
   return arr.filter((_, index) => index === selection).forEach((obj) => {
     let props = getAllKeys(obj);
-    let prop = props[prompt.keyInSelect(props, 'Which todo would you like to edit?')]
+    let prop = props[prompt.keyInSelect(props, 'Which property would you like to edit?')]
     if (prop === 'complete') {
       let complete = markTodoComplete(obj);
       obj[prop] = complete
